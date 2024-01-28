@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'SingleDay';
+    src: url('../public/fonts/SingleDay-Regular.ttf') format('woff'); /* Update the path and format accordingly */
+    font-weight: normal;
+    font-style: normal;
+  }
