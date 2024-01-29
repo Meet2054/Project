@@ -8,24 +8,32 @@ const data = [
 ]
 
 const Employee = () => {
+
+  const thTdStyle = {
+    border: '1px solid #474F7A',
+    padding: '10px',
+    textAlign: 'center',
+    borderRadius: '10px',
+  };
+
   return <div>
   <div className="App">
           <table className="border-2 border-solid border-green-600 w-[100%] h-200">
           <tr className='text-center'>
-                    <th className='border-b border-solid border-black text-center'>Id</th>
-                    <th className='border-b border-solid border-black text-center'>Name</th>
-                    <th className='border-b border-solid border-black'>Age</th>
-                    <th className='border-b border-solid border-black'>Address</th>
-                    <th className='border-b border-solid border-black'>Contact</th>
+                    <th style={thTdStyle}>Id</th>
+                    <th style={thTdStyle}>Name</th>
+                    <th style={thTdStyle}>Age</th>
+                    <th style={thTdStyle}>Address</th>
+                    <th style={thTdStyle}>Contact</th>
                 </tr>
                 {data.map((val, key) => {
                     return (
                         <tr key={key} >
-                            <td className='text-center'>{val.id}</td>
-                            <td className='text-center'>{val.Businessname}</td>
-                            <td className='text-center'>{val.age}</td>
-                            <td className='text-center'>{val.address}</td>
-                            <td className='text-center'>{val.contact}</td>
+                            <td style={thTdStyle}>{val.id}</td>
+                            <td style={thTdStyle}>{val.Businessname}</td>
+                            <td style={thTdStyle}>{val.age}</td>
+                            <td style={thTdStyle}>{val.address}</td>
+                            <td style={thTdStyle}>{val.contact}</td>
 
                         </tr>
                     )
