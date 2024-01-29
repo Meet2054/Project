@@ -2,7 +2,7 @@
 import React from 'react';
 
 const WorkToDo = () => {
-  return <div>Work Component</div>;
+  return <div>Work </div>;
 }
 
 export default WorkToDo;

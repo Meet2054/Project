@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import AssignWork from './AssignWork';
+import AssignWork from './UpdateWork';
 import Worklist from './WorkList';
-import WorkToDo from './AssignWork';
+import WorkToDo from './UpdateWork';
 
 const Sidebar = () => {
   const [selectedOption, setSelectedOption] = useState('Work to do');
