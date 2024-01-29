@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import AssignWork from './AssignWork';
 import Worklist from './WorkList';
 import EmployeeList from './Employee';
+import Updated_workList from './Updated_workList';
+// Remove the duplicate import statement for 'AssignWork'
+// import AssignWork from './AssignWork';
 
 const Sidebar = () => {
   const [selectedOption, setSelectedOption] = useState('Assign Work');
@@ -18,6 +21,8 @@ const Sidebar = () => {
         return <Worklist />;
       case 'Employee List':
         return <EmployeeList />;
+      case 'Updated Work':
+        return <Updated_workList  />;
       default:
         return null;
     }
@@ -53,6 +58,16 @@ const Sidebar = () => {
         >
           Employee List
         </a>
+        <a
+          href="#"
+          className={`block py-2 px-4 text-lg no-underline transition duration-300 ease-in-out hover:bg-gray-700 ${
+            selectedOption === 'Updated Work' && 'bg-gray-700'
+          }`}
+          onClick={() => handleOptionClick('Updated Work')}
+        >
+          Updated Work
+        </a>
+        
       </div>
       <div className="flex-1 p-5">{renderContent()}</div>
     </div>
