@@ -3,6 +3,7 @@ import './App.css'
 import Admin_home from './Admin/Admin_home.jsx'
 import LoginScreen from './Auth/LoginScreen'
 import RegisterScreen from './Auth/registerScreen'
+import Client_home from './Client/Client_home'
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
     <>
      {/* <LoginScreen /> */}
      {/* <RegisterScreen /> */}
-     <Admin_home />
+     {/* <Admin_home /> */}
+     <Client_home />
     </>
   )
 }
