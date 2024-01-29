@@ -11,8 +11,8 @@ function App() {
     <>
      {/* <LoginScreen /> */}
      {/* <RegisterScreen /> */}
-     {/* <Admin_home /> */}
-     <Client_home />
+     <Admin_home />
+     {/* <Client_home /> */}
     </>
   )
 }
