@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import AssignWork from './UpdateWork';
-import Worklist from './WorkList';
-import WorkToDo from './UpdateWork';
 
+import Worklist from './WorkList';
+import UpdateForm from './UpdateWork';
 const Sidebar = () => {
   const [selectedOption, setSelectedOption] = useState('Work to do');
 
@@ -13,7 +12,7 @@ const Sidebar = () => {
   const renderContent = () => {
     switch (selectedOption) {
       case 'Work to do':
-        return <WorkToDo />;
+        return <UpdateForm />;
       case 'Worklist':
         return <Worklist />;
       default:
