@@ -21,8 +21,8 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="flex">
-      <div className="h-screen w-60 bg-[#474F7A] rounded-xl text-white shadow-2xl m-2 select-none">
+    <div className='flex '>
+      <div className="h-full w-60 bg-[#474F7A] rounded-xl text-white shadow-2xl m-2 select-none">
         <a
           href="#"
           className={`block py-2 px-4 text-lg no-underline transition duration-300 ease-in-out hover:bg-gray-700 ${

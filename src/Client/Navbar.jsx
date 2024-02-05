@@ -7,7 +7,7 @@ import {
 import { Button } from "@/components/ui/button"
 const Navbar = () => {
   return (
-    <div className="bg-[#474F7A] rounded-b-xl p-4 text-white shadow-2xl mx-2">
+    <div className="bg-[#474F7A] rounded-b-xl p-4 text-white shadow-2xl mx-2 ">
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           <img alt="Logo" src="/path/to/your/logo.png" className="h-8 mr-2" />
